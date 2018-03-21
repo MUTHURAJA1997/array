@@ -1,23 +1,23 @@
 #include <stdio.h>
 int main(void) {
-	int i,temp[10],rot,a[10],n;
+	int i,temp[10],root,a[10],n;
 	scanf("%d",&rot);
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 	scanf("%d",&a[i]);
 	}
-	for(i=0;i<rot;i++)
+	for(i=0;i<root;i++)
 	{
 	temp[i]=a[i];
 	}
-	for(i=0;i<n-rot;i++)
+	for(i=0;i<n-root;i++)
 	{
-	a[i]=a[i+rot];
+	a[i]=a[i+root];
 	}
 	for(i=0;i<n;i++)
 	{
-	a[n-rot+i]=temp[i];
+	a[n-root+i]=temp[i];
 	}
 	for(i=0;i<n;i++)
 	{
